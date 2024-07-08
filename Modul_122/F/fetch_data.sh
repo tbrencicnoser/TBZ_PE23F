@@ -104,7 +104,7 @@ EOF
 
 # Funktion zum Senden der HTML-Datei per E-Mail
 send_email() {
-    recipient="your_email@example.com"
+    recipient="tomas.brencic@edu.tbz.ch"
     subject="Aktuelle API-Daten"
     body="Anbei die aktuellen Daten von den abgerufenen APIs."
     
