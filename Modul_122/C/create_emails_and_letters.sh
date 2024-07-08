@@ -80,7 +80,7 @@ bye
 EOF
 
 # Schritt 5: E-Mail mit Anhang senden
-recipient="your_email@example.com"
+recipient="tomas.brencic@edu.tbz.ch"
 subject="Neue TBZ-Mailadressen $(wc -l < "$output_file")"
 body="Lieber Empfänger,
 
@@ -89,7 +89,7 @@ Es wurden $(wc -l < "$output_file") erzeugt.
 
 Bei Fragen kontaktiere bitte [IhreTBZ-Emailadresse]
 
-Gruss [IhrVorname] [IhrNachname]"
+Gruss Tomas Brencic"
 
 echo "$body" | mail -s "$subject" -a "$archive_file" "$recipient"
 
